@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery的数据请求</title>
+    <style>
+        .main{
+            width:200px;
+            height:200px;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        let url = 'https://api.myjson.com/bins/19gaco'
+        $.getJSON(url, function(res){
+            console.log(res)
+        })
+    </script>
+</body>
+</html>
